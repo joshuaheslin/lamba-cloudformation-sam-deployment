@@ -2,7 +2,7 @@
 
 Boilerplate for creating/deploying an AWS lamba service with schedule cron expression service using SAM.
 
-# Method 1 - Log in AWS account in command line
+# Step 1 - Log in AWS account in command line
 
 ### 1 Log into aws cli
 
@@ -11,7 +11,7 @@ aws cli
 aws configure
 ```
 
-# Method 2 - SAM - Serverless Application Model
+# Step 2 - SAM - Serverless Application Model
 
 ### 1 install aws-sam-cli
 
