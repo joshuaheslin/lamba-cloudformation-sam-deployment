@@ -1,0 +1,6 @@
+node_modules/
+
+# This is ignored so the same template.yaml file isn't commited twice.
+deployment/package*
+
+logs/*

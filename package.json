@@ -1,0 +1,13 @@
+{
+  "name": "lamba-sam-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for creating/deploying an AWS lamba service with schedule cron expression service using SAM.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "deploy": "sam package --template-file ./deployment/template.yaml --output-template-file ./deployment/package.yaml --s3-bucket sam-deployments-bucket && sam deploy --template-file ./deployment/package.yaml --stack-name sam-deployment-boilerplate --capabilities CAPABILITY_IAM",
+    "delete": "aws cloudformation delete-stack --stack-name sam-deployment-boilerplate"
+  },
+  "author": "",
+  "license": "ISC"
+}
